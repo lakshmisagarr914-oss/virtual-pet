@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Pet Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Virtual Pet Care 🐾</h1>
+    <div class="pet-container">
+      <img id="pet" src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pet">
+      <p id="mood">Mood: 😊 Happy</p>
+    </div>
+
+    <div class="status-bars">
+      <p>🍎 Hunger: <span id="hunger">100</span>%</p>
+      <p>🎾 Happiness: <span id="happiness">100</span>%</p>
+      <p>💤 Energy: <span id="energy">100</span>%</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="feedPet()">Feed 🍎</button>
+      <button onclick="playPet()">Play 🎾</button>
+      <button onclick="sleepPet()">Sleep 💤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

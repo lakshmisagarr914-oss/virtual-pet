@@ -1,0 +1,46 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #f9d6ff, #d6eaff);
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.pet-container img {
+  width: 150px;
+  margin: 10px;
+}
+
+.status-bars {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.status-bars p {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff8c94;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #ff5e6c;
+}
