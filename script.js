@@ -55,7 +55,7 @@ function sleepPet() {
   savePet();
 }
 
-// Auto decrease
+// Auto decrease every 5 seconds
 setInterval(() => {
   pet.hunger = Math.max(0, pet.hunger - 2);
   pet.happiness = Math.max(0, pet.happiness - 1);
