@@ -9,21 +9,26 @@
 <body>
   <div class="container">
     <h1>🐾 Virtual Pet Care 🐾</h1>
+
+    <!-- Pet Image & Mood -->
     <div class="pet-container">
       <img id="pet" src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pet">
       <p id="mood">Mood: 😊 Happy</p>
     </div>
 
+    <!-- Pet Status -->
     <div class="status-bars">
       <p>🍎 Hunger: <span id="hunger">100</span>%</p>
       <p>🎾 Happiness: <span id="happiness">100</span>%</p>
       <p>💤 Energy: <span id="energy">100</span>%</p>
     </div>
 
+    <!-- Action Buttons -->
     <div class="buttons">
       <button onclick="feedPet()">Feed 🍎</button>
       <button onclick="playPet()">Play 🎾</button>
       <button onclick="sleepPet()">Sleep 💤</button>
+      <button id="musicToggle">🔇 Play Music</button> <!-- 👈 added background music button -->
     </div>
   </div>
 
