@@ -17,8 +17,47 @@ body {
 .pet-container img {
   width: 150px;
   margin: 10px;
+  transition: transform 0.3s ease; /* smooth motion for scale & rotation */
 }
 
+/* -----------------------
+   🔹 Pet Animations
+-------------------------- */
+
+/* Eating Animation */
+@keyframes eat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Playing Animation */
+@keyframes play {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(5deg); }
+}
+
+/* Sleeping Animation */
+@keyframes sleep {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Classes added by JS */
+.eating { animation: eat 1s ease; }
+.playing { animation: play 1s ease; }
+.sleeping { animation: sleep 2s ease infinite; }
+
+/* Glow effect while acting */
+.glow {
+  filter: drop-shadow(0 0 15px #ff8c94);
+}
+
+/* -----------------------
+   🔹 Status & Buttons
+-------------------------- */
 .status-bars {
   margin-top: 15px;
   text-align: left;
@@ -43,4 +82,14 @@ body {
 
 .buttons button:hover {
   background-color: #ff5e6c;
+  transform: scale(1.1);
+}
+
+/* Optional: Style for the music button */
+#musicToggle {
+  background-color: #82d1ff;
+}
+
+#musicToggle:hover {
+  background-color: #56c0ff;
 }
